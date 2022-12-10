@@ -4,7 +4,7 @@
     <h1>{{$question->title}}</h1>
     <p>{{$question->content}}</p>
 
-    <x-updated :date='$question->created_at' name='{{$question->user->name}}'></x-updated>
+    <x-updated :date='$question->created_at' name='{{$question->user->name}}' user_id='{{$question->user->id}}'></x-updated>
 
     @auth
         @if ($question->likes->where('id', Auth::id())->count() == 1)
