@@ -19,7 +19,7 @@
         @endif
     @endauth
 
-    <h5>Answers</h3>
+    <h5>Answers</h5>
 
     @auth
         <div class="mt-2 md-2">
